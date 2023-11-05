@@ -15,7 +15,6 @@ class AnimalDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAnimalDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        Middleman.sharedPreferences = getSharedPreferences("animalList", Context.MODE_PRIVATE)
         binding.backButton.setOnClickListener {
             finish()
             startActivity(Intent(this@AnimalDetailActivity, AnimalNamesActivity::class.java))}

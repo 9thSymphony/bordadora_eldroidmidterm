@@ -17,7 +17,6 @@ class ManageBlockActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityManageBlockBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        Middleman.sharedPreferences = getSharedPreferences("animalList", Context.MODE_PRIVATE)
         binding.blockedAnimalRecyclerView.layoutManager = LinearLayoutManager(this)
         val animalList = ArrayList<AnimalData>()
 
